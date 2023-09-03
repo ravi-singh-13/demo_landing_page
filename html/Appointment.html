@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../index.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="../img/logo/main_logo.png" alt="logo">
+                <h1>PetBuy</h1>
+            </div>
+
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+                <nav class="nav-links" id="nav-links">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="./html/about.html">About</a></li>
+                        <li><a href="./under_construction.html">Appointment</a></li>
+                        <li><a href="./under_construction.html">Adoption</a></li>
+                    </ul>
+                </nav>
+
+        </div>
+    </header>
+    <div class=" appointment">
+        <h1>Appointment form</h1>
+
+        <form action="" id="appointment_form" onsubmit="myFunction()">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required pattern="[A-Za-z\s]*"
+                title="Only letters Allow">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="pet_type">Pet type:</label>
+            <input list="pet_list" name="pet_type" id="pet_type" required>
+            <datalist id="pet_list">
+                <option value="Dog">
+                <option value="Cat">
+                <option value="Bird">
+                <option value="Pig">
+                <option value="Rabbit">
+                <option value="Turtle">
+                <option value="Reptiles">
+            </datalist>
+
+            <label for="service_type">Choose a service:</label>
+            <select id="service_type" required>
+                <option value="volvo">Vet</option>
+                <option value="saab">Grooming</option>
+                <option value="opel">Boarding</option>
+                <option value="audi">Training</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required oninput="dateControl(this)">
+
+            <label for="hourSelect">Preferred Time:</label>
+            <!-- <input type="time" id="time" name="time" required min="08:00" max="17:00"> -->
+            <select id="hourSelect" name="hourSelects">
+                <option value="08:00">8:00 AM</option>
+                <option value="09:00">9:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="13:00">1:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="15:00">3:00 PM</option>
+                <option value="16:00">4:00 PM</option>
+                <option value="17:00">5:00 PM</option>
+                
+            </select>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit" value="submit" >Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div>
+            
+            <div>
+                <h1>Contact Information</h1>
+                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>Mobile Number: <a href="tel:+0000000000">000-000-000</a></p>
+            </div>
+            <div >
+                <ul>
+                    <li><a href="https://www.facebook.com/yourprofile" target="_blank"><img src="../img/icon/sm_icon/icons8-facebook-48.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/yourprofile" target="_blank"><img src="../img/icon/sm_icon/icons8-twitter-48.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/yourprofile" target="_blank"><img src="../img/icon/sm_icon/icons8-instagram-48.png" alt="Instagram"></a></li>
+                    <li><a href="https://yourprofile.tumblr.com/" target="_blank"><img src="../img/icon/sm_icon/icons8-tumblr-48.png" alt="Tumblr"></a></li>
+                    <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="../img/icon/sm_icon/icons8-linkedin-48.png" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+            <div>© 2023 demo website. All rights not reserved | Lorem ipsum dolor | Eum nihil internos</div>
+        </div>
+    </footer>
+</body>
+
+</html>
